@@ -2,6 +2,7 @@
 
 .card-tools {
   flex: 0 0 287px;
+  // width: 100%;
   min-height: 226px;
   max-height: 278px;
   display: flex;
@@ -15,6 +16,7 @@
   border-radius: 16px;
   @include u.media('tablet') {
     flex: 0 0 376px;
+    // width: 100%;
     padding-top: 48px;
     padding-right: 102px;
     padding-bottom: 48px;

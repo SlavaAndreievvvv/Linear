@@ -7,14 +7,8 @@
   box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.32);
   border-radius: 8px;
   padding: 16px;
-  margin-bottom: 16px;
-  margin-right: 16px;
   max-width: 381px;
-  // height: 100%;
-
-  // scroll-snap-align: start;
-  // scroll-margin-bottom: 16px;
-  // scroll-margin-top: 16px;
+  height: 100%;
   
   &__avatar {
     margin-bottom: auto;
@@ -53,5 +47,35 @@
   }
   &__text {
     @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
+  }
+  &--position-4 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+  &--position-5 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-22px);
+    }
+  }
+  &--position-7 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+  &--position-8 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+  &--position-10 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
   }
 }
