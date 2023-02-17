@@ -1,0 +1,82 @@
+@use 'utils' as u;
+
+.commandl-section {
+  background-color: u.$color-grey-2;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  @include u.media('tablet') {
+    align-items: center;
+    padding-right: 16px;
+  }
+  @include u.media('desktop') {
+    padding-left: calc(50% - 590px);
+    padding-right: calc(50% - 590px);
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  &__images {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+    background: linear-gradient(180deg, #302F34 0%, #28272D 108.24%);
+    box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.32);
+    border-radius: 16px;
+    &:first-of-type {
+      margin-right: 16px;
+    }
+  }
+  &__caption {
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: left;
+    @include u.media('tablet') {
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    text-align: left;
+    @include u.media('tablet') {
+      text-align: center;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 42px;
+    padding-right: 16px;
+  }
+  &__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(from 228.06deg at 50% 55.6%, #B25F5F 0deg, #5A306E 84.17deg, #66A1E0 131.83deg, #F4BD6A 173.39deg, #EB9363 260.48deg, #D86E58 314.67deg, #B25F5F 360deg);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    padding-left: 36px;
+    @include u.media('tablet') {
+      border-radius: 16px;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+  }
+  &__picture {
+    width: 100%;
+    height: 100%;
+    min-width: 287px;
+    min-height: 167px;
+    max-width: 700px;
+    max-height: 560px;
+  }
+}

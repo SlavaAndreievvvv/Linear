@@ -1,0 +1,35 @@
+@use 'utils' as u;
+
+.sponsors-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @include u.text(u.rem(13px), 400, u.$color-grey-6, 150%);
+    margin-bottom: 37px;
+    @include u.media('tablet') {
+      margin-bottom: 64px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1025px;
+    @include u.media('tablet') {
+      height: 200px;
+    }
+  }
+  &__icon {
+    width: 171px;
+    height: 51px;
+    @include u.media('tablet') {
+      width: 200px;
+      height: 60px;
+    }
+  }
+}

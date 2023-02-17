@@ -2,17 +2,1180 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scss/style.scss" />
-    <title>Parcel by Merge</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/src/assets/images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/src/assets/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Linear</title>
   </head>
   <body>
-    <div class="container index-page">
-      <h1 class="title index-page__title">Parcel by Merge</h1>
-      <a href="https://merge.rocks" target="_blank" class="cover">
-        <img src="./assets/images/cover.png" alt="merge" />
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <svg class="header__icon">
+            <use xlink:href="#logo" />
+          </svg>
+        </a>
+        <div class="header__wrapper">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Features</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#" class="menu__link">Method</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#" class="menu__link"
+                    >Custumers</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#" class="menu__link"
+                    >Integrations</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#" class="menu__link"
+                    >Changelog</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#" class="menu__link">Pricing</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#" class="menu__link">Company</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a href="#" class="header__link">Log in</a>
+          <button class="header__button button-secondary">Sign Up</button>
+          <button id="burger" class="header__burger burger">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+          </button>
+          <ul id="burger-menu" class="burger-menu">
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">About</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Courses</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Leaderboard</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Whitepaper</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Blog</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Privacy Policy</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Terms of Use</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Contact Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="magic-back hero-section__magic-back">
+        <span class="magic-back__text">Bring magic back to software</span>
+        <a href="#" class="magic-back__link"
+          >READ ME
+          <svg class="magic-back__icon">
+            <use xlink:href="#arrow" />
+          </svg>
+        </a>
+      </div>
+      <h1 class="hero-section__title title container">
+        The issue tracking tool you'll enjoy using
+      </h1>
+      <p class="hero-section__subtitle subtitle container">
+        Linear helps streamline software projects, sprints, tasks, and bug
+        tracking. It’s built for high-performance teams.
+      </p>
+      <button class="hero-section__button button">
+        Sign up for free
+        <svg class="button__icon">
+          <use xlink:href="#arrow" />
+        </svg>
+      </button>
+      <div class="hero-section__wrapper">
+        <img
+          class="hero-section__background"
+          src="./assets/svg/hero-img-2.png"
+          alt="hero-img"
+        />
+      </div>
+    </section>
+    <section class="sponsors-section container">
+      <p class="sponsors-section__title">
+        POWERING THE NEXT GENERATION OF COMPANIES
+      </p>
+      <ul class="sponsors-section__list">
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon1.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon2.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon3.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon4.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon5.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon6.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon7.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon8.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon9.png"
+              alt="image"
+          /></a>
+        </li>
+        <li class="sponsors-section__item">
+          <a class="sponsors-section__link" href="#"
+            ><img
+              class="sponsors-section__icon"
+              src="./assets/svg/sponsors-icon10.png"
+              alt="image"
+          /></a>
+        </li>
+      </ul>
+    </section>
+    <section class="tools-section">
+      <h2 class="tools-section__caption caption container">
+        An experience you'd expect from a professional tool.
+      </h2>
+      <p class="tools-section__subtitle subtitle sebtitle--size container">
+        Opinionated and designed for daily use.
+      </p>
+      <div class="tools-section__list swiper">
+        <div class="tools-section__wrapper swiper-wrapper">
+          <div class="tools-section__card card-tools swiper-slide">
+            <img
+              class="card-tools__img card-tools__img--first"
+              src="./assets/svg/tools-img-1.svg"
+              alt="image"
+            />
+            <span class="card-tools__title">Built for speed</span>
+            <span class="card-tools__description">
+              Synchronized in real-time across all users. No spinners or
+              waiting.
+            </span>
+          </div>
+          <div class="tools-section__card card-tools swiper-slide">
+            <img
+              class="card-tools__img card-tools__img--first"
+              src="./assets/svg/tools-img-1.svg"
+              alt="image"
+            />
+            <span class="card-tools__title">Built for speed</span>
+            <span class="card-tools__description">
+              Synchronized in real-time across all users. No spinners or
+              waiting.
+            </span>
+          </div>
+          <div class="tools-section__card card-tools swiper-slide">
+            <img
+              class="card-tools__img card-tools__img--first"
+              src="./assets/svg/tools-img-1.svg"
+              alt="image"
+            />
+            <span class="card-tools__title">Built for speed</span>
+            <span class="card-tools__description">
+              Synchronized in real-time across all users. No spinners or
+              waiting.
+            </span>
+          </div>
+          <div class="tools-section__card card-tools swiper-slide">
+            <img
+              class="card-tools__img card-tools__img--first"
+              src="./assets/svg/tools-img-1.svg"
+              alt="image"
+            />
+            <span class="card-tools__title">Built for speed</span>
+            <span class="card-tools__description">
+              Synchronized in real-time across all users. No spinners or
+              waiting.
+            </span>
+          </div>
+          <div class="tools-section__card card-tools swiper-slide">
+            <img
+              class="card-tools__img card-tools__img--first"
+              src="./assets/svg/tools-img-1.svg"
+              alt="image"
+            />
+            <span class="card-tools__title">Built for speed</span>
+            <span class="card-tools__description">
+              Synchronized in real-time across all users. No spinners or
+              waiting.
+            </span>
+          </div>
+          <div class="tools-section__card card-tools swiper-slide">
+            <img
+              class="card-tools__img card-tools__img--first"
+              src="./assets/svg/tools-img-1.svg"
+              alt="image"
+            />
+            <span class="card-tools__title">Built for speed</span>
+            <span class="card-tools__description">
+              Synchronized in real-time across all users. No spinners or
+              waiting.
+            </span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="interface-section">
+      <div class="interface-section__wrapper">
+        <h3 class="interface-section__caption caption">
+          Interface, streamlined.
+        </h3>
+        <p class="interface-section__subtitle subtitle sebtitle--size">
+          Robust. Fast to navigate. Create issues in seconds. Add priorities,
+          labels and estimates.
+        </p>
+        <p class="interface-section__subtitle subtitle sebtitle--size">
+          List and board. See your issues in either a list or board view.
+        </p>
+      </div>
+      <div class="interface-section__wrapper-img">
+        <img
+          src="./assets/images/interface-img.png"
+          alt="image"
+          class="interface-section__img"
+        />
+      </div>
+    </section>
+    <section class="commandl-section">
+      <div class="commandl-section__images">
+        <a class="commandl-section__link"
+          ><img
+            src="./assets/images/command-line-img-1.svg"
+            alt="image"
+            class="commandl-section__image"
+          />
+        </a>
+        <a class="commandl-section__link"
+          ><img
+            src="./assets/images/command-line-img-2.svg"
+            alt="image"
+            class="commandl-section__image"
+          />
+        </a>
+      </div>
+      <div class="commandl-section__wrapper">
+        <h4 class="commandl-section__caption caption">
+          Meet your command line
+        </h4>
+        <p class="commandl-section__subtitle subtitle subtitle--size">
+          Any action can be accessed and completed in seconds with the command
+          menu.
+        </p>
+      </div>
+      <div class="commandl-section__block">
+        <img
+          class="commandl-section__picture"
+          src="./assets/images/command-line-picture.svg"
+          alt="picture"
+        />
+      </div>
+    </section>
+    <section class="cycles-section">
+      <div class="cycles-section__wrapper container">
+        <h5 class="cycles-section__caption caption">
+          Build team momentum with Cycles
+        </h5>
+        <p class="cycles-section__subtitle subtitle subtitle--size">
+          Velocity and estimates. Track your team’s workload and velocity.
+        </p>
+        <p class="cycles-section__subtitle subtitle subtitle--size">
+          Automated. Cycles run on an automated schedule, so you can focus on
+          your work.
+        </p>
+      </div>
+      <div class="cycles-section__block">
+        <img
+          src="./assets/images/cycles-picture.svg"
+          alt="image"
+          class="cycles-section__picture"
+        />
+      </div>
+    </section>
+    <section class="roadmap-section">
+      <div class="roadmap-section__wrapper">
+        <h6 class="roadmap-section__caption caption">
+          Set direction with Roadmap
+        </h6>
+        <p class="roadmap-section__subtitle subtitle subtitle--size">
+          Focus on the big picture. Set milestones to tie projects to larger
+          company goals and motivate your team. View all company projects in one
+          streamlined view and easily identify what needs your attention.
+        </p>
+      </div>
+      <div class="roadmap-section__block">
+        <img
+          src="./assets/images/roadmap-picture.svg"
+          alt="picture"
+          class="roadmap-section__picture"
+        />
+      </div>
+    </section>
+    <section class="linear-section container">
+      <p class="linear-section__caption caption">Integrated with your tools</p>
+      <p class="linear-section__subtitle subtitle subtitle-size">
+        Linear keeps everyone aligned and working more efficiently. Engineers,
+        designers, and peers – all collaborating in one tool.
+      </p>
+      <div class="linear-section__card card-linear">
+        <div class="card-linear__content">
+          <div class="card-linear__links">
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-1" />
+              </svg>
+            </a>
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-2" />
+              </svg>
+            </a>
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-3" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-linear__description">
+            <p class="card-linear__caption caption caption--linear">
+              Automate tracking with GitHub, GitLab and Sentry
+            </p>
+            <p class="card-linear__subtitle subtitle subtitle--linear">
+              Linear integrates with your pull requests and Sentry issues.
+            </p>
+          </div>
+        </div>
+        <div class="card-linear__wrapper">
+          <img
+            src="./assets/svg/linear-picture-1.svg"
+            alt="picture"
+            class="card-linear__picture card-linear__picture--blue"
+          />
+        </div>
+      </div>
+      <div class="linear-section__card card-linear">
+        <div class="card-linear__content">
+          <div class="card-linear__links">
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-4" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-linear__description">
+            <p class="card-linear__caption caption caption--linear">
+              Preview and embed full Figma designs in Linear.
+            </p>
+            <p class="card-linear__subtitle subtitle subtitle--linear">
+              Add Figma links to any issue as you work on your designs.
+            </p>
+          </div>
+        </div>
+        <div class="card-linear__wrapper">
+          <img
+            src="./assets/svg/linear-picture-2.svg"
+            alt="picture"
+            class="card-linear__picture card-linear__picture--purple"
+          />
+        </div>
+      </div>
+      <div class="linear-section__card card-linear">
+        <div class="card-linear__content">
+          <div class="card-linear__links">
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-5" />
+              </svg>
+            </a>
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-6" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-linear__description">
+            <p class="card-linear__caption caption caption--linear">
+              Link your customer tickets to your Linear workspace
+            </p>
+            <p class="card-linear__subtitle subtitle subtitle--linear">
+              Create or link Linear issues from within Zendesk or Intercom
+            </p>
+          </div>
+        </div>
+        <div class="card-linear__wrapper">
+          <img
+            src="./assets/svg/linear-picture-3.svg"
+            alt="picture"
+            class="card-linear__picture card-linear__picture--light-blue"
+          />
+        </div>
+      </div>
+      <div class="linear-section__card card-linear">
+        <div class="card-linear__content">
+          <div class="card-linear__links">
+            <a href="#" class="card-linear__link">
+              <svg class="card-linear__img">
+                <use xlink:href="#linear-icon-7" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-linear__description">
+            <p class="card-linear__caption caption caption--linear">
+              Get updates and create issues with Slack
+            </p>
+            <p class="card-linear__subtitle subtitle subtitle--linear">
+              Receive updates directly in your Slack channels and create issues
+              from discussions.
+            </p>
+          </div>
+        </div>
+        <div class="card-linear__wrapper">
+          <img
+            src="./assets/svg/linear-picture-4.svg"
+            alt="picture"
+            class="card-linear__picture card-linear__picture--green"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="linear-section__mini-card mini-card mini-card--mr">
+          <img
+            src="./assets/svg/mini-block-image-1.svg"
+            alt="image"
+            class="mini-card__img"
+          />
+          <div class="mini-card__wrapper">
+            <p class="mini-card__caption caption caption--linear">
+              Connect with 1000+ tools using Zapier
+            </p>
+            <p class="mini-card__subtitle subtitle subtitle--linear">
+              Create new issues based on triggers from Zapier applications.
+            </p>
+          </div>
+        </div>
+        <div class="linear-section__mini-card mini-card">
+          <img
+            src="./assets/svg/mini-block-image-2.svg"
+            alt="image"
+            class="mini-card__img"
+          />
+          <div class="mini-card__wrapper">
+            <p class="mini-card__caption caption caption--linear">
+              Custom workflows using our API
+            </p>
+            <p class="mini-card__subtitle subtitle subtitle--linear">
+              Query and mutate data using our GraphQL API to build custom
+              workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-section">
+      <p class="reviews-section__caption caption container">
+        Loved by product people
+      </p>
+      <div class="reviews-section__list container" id="grid">
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-1.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Melissa Du</p>
+              <a href="#" class="card-review__link">@melissadooo</a>
+              <p class="card-review__date">Aug 11</p>
+            </div>
+            <div class="card-review__text">
+              @linear_app — We use it and love it. Fast, keyboard shortcuts,
+              simple & clear UI.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-2.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Taylor</p>
+              <a href="#" class="card-review__link">@taylorcara_</a>
+              <p class="card-review__date">Jun 18</p>
+            </div>
+            <div class="card-review__text">
+              If you haven’t tried out Linear App I would definitely recommend
+              it for both designers and developers! It’s replaced all my current
+              issue software 🤙🏻
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-3.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Paul Stamatiou</p>
+              <a href="#" class="card-review__link">@Stammy</a>
+              <p class="card-review__date">Jun 22</p>
+            </div>
+            <div class="card-review__text">
+              Started using @linear_app to track and organize issues for my
+              side-project iOS Stonks app.. So much better than what I was
+              shoehorning Notion in to doing. it's beautiful 😭 and the
+              onboarding was great.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-4.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">phineas</p>
+              <a href="#" class="card-review__link">@phineyes</a>
+              <p class="card-review__date">Jun 18</p>
+            </div>
+            <div class="card-review__text">
+              Quick appreciation tweet for @linear - we’ve been using it for the
+              past week or so, and it’s made our team SO much more productive +
+              it syncs automatically with our GitHub repos. Haven't been excited
+              about a product like this in a while.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-5.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Eugene Yaroslavtsev</p>
+              <a href="#" class="card-review__link">@exhaze</a>
+              <p class="card-review__date">May 13</p>
+            </div>
+            <div class="card-review__text">
+              Tried out @linear today. Blazing fast ⚡️. One of those rare tools
+              that provides just enough user interface and then just gets out of
+              the way to let you focus on your work.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-6.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Parker Ehret</p>
+              <a href="#" class="card-review__link">@parkerehret</a>
+              <p class="card-review__date">May 22</p>
+            </div>
+            <div class="card-review__text">
+              I’ve been using @linear for over 6 months now. It’s changed how I
+              manage projects. It’s changed how I manage my own tasks. It’s
+              changed what I expect from an application. It’s changed how I
+              think about building software. Aces.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-7.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Xavi Magrinyà</p>
+              <a href="#" class="card-review__link">@xavimb</a>
+              <p class="card-review__date">May 10</p>
+            </div>
+            <div class="card-review__text">
+              I’ve been lately using @linear for tracking issues and I’m loving
+              it. Very simple UI and lots of tricks and shortcuts for power
+              users. If you have the chance, try it out!
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-8.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Chibuzor Odai Obiora</p>
+              <a href="#" class="card-review__link">@nbyodai</a>
+              <p class="card-review__date">Aug 3</p>
+            </div>
+            <div class="card-review__text">
+              Got access to @linear might be one of the infinity stones for the
+              software developer's infinity gauntlet. Took me all of 10 minutes
+              to realise that there is no going back. Solid work! Kudos to the
+              team.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-9.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Geoffrey Hayes</p>
+              <a href="#" class="card-review__link">@justHGH</a>
+              <p class="card-review__date">Sep 21</p>
+            </div>
+            <div class="card-review__text">
+              h/t to @linear . Engineering management has never been so fun.
+            </div>
+          </div>
+        </div>
+        <div class="card-review reviews-section__card-review">
+          <img
+            src="./assets/svg/avatar-10.svg"
+            alt="avatar"
+            class="card-review__avatar"
+          />
+          <div class="card-review__content">
+            <div class="card-review__info">
+              <p class="card-review__name">Karan Talati</p>
+              <a href="#" class="card-review__link">@ktal90</a>
+              <p class="card-review__date">Sep 21</p>
+            </div>
+            <div class="card-review__text">
+              @linear has 10x'd our engineering and development speed 🙌
+              @alfredapp 's workflows and snippets are great too 🙌
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="reviews-section__link container"
+        >SEE MORE
+        <svg class="reviews-section__icon">
+          <use xlink:href="#arrow" />
+        </svg>
       </a>
-    </div>
+    </section>
+    <section class="invite-section container">
+      <img
+        src="./assets/svg/big-logo.svg"
+        alt="logo"
+        class="invite-section__logo"
+      />
+      <p class="invite-section__caption caption">
+        Get started with Linear today.
+      </p>
+      <p class="invite-section__subtitle subtitle subtitle--size">
+        Linear keeps everyone aligned and working without friction. Engineers,
+        designers, and peers – all collaborating in one tool.
+      </p>
+      <button class="invite-section__button button">
+        Sign up for free
+        <svg class="button__icon">
+          <use xlink:href="#arrow" />
+        </svg>
+      </button>
+    </section>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="#" class="footer__link">
+          <svg class="footer__icon">
+            <use xlink:href="#logo" />
+          </svg>
+        </a>
+        <p class="footer__text">- Designed Worldwide</p>
+      </div>
+      <div class="footer__blocks">
+        <ul class="footer__block block-footer">
+          <li class="block-footer__item">
+            <span class="block-footer__caption">Product</span>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Features</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Integrations</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Pricing</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Changelog</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Docs</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Linear Method</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Download</a>
+          </li>
+        </ul>
+        <ul class="footer__block block-footer">
+          <li class="block-footer__item">
+            <span class="block-footer__caption">Company</span>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">About us</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Blog</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Careers</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Customers</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Twitter</a>
+          </li>
+        </ul>
+        <ul class="footer__block block-footer">
+          <li class="block-footer__item">
+            <span class="block-footer__caption">Resources</span>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Community</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Contact</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">DPA</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Terms of service</a>
+          </li>
+        </ul>
+        <ul class="footer__block block-footer">
+          <li class="block-footer__item">
+            <span class="block-footer__caption">Developers</span>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">API</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">Status</a>
+          </li>
+          <li class="block-footer__item">
+            <a href="#" class="block-footer__link">GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social-links">
+        <svg class="footer__social-link">
+          <use xlink:href="#twitter" />
+        </svg>
+        <svg class="footer__social-link">
+          <use xlink:href="#githab" />
+        </svg>
+        <svg class="footer__social-link">
+          <use xlink:href="#slack" />
+        </svg>
+      </div>
+    </footer>
+    <!-- SVG -->
+    <svg style="opacity: 0; z-index: -1; position: fixed">
+      <symbol
+        id="slack"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.36156 10.111C3.36156 11.036 2.60586 11.7917 1.68078 11.7917C0.7557 11.7917 0 11.036 0 10.111C0 9.18588 0.7557 8.43018 1.68078 8.43018H3.36156V10.111Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M4.2085 10.111C4.2085 9.18588 4.9642 8.43018 5.88928 8.43018C6.81436 8.43018 7.57006 9.18588 7.57006 10.111V14.3194C7.57006 15.2445 6.81436 16.0002 5.88928 16.0002C4.9642 16.0002 4.2085 15.2445 4.2085 14.3194V10.111Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M5.88928 3.36156C4.9642 3.36156 4.2085 2.60586 4.2085 1.68078C4.2085 0.7557 4.9642 0 5.88928 0C6.81436 0 7.57006 0.7557 7.57006 1.68078V3.36156H5.88928Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M5.88925 4.2085C6.81433 4.2085 7.57003 4.9642 7.57003 5.88928C7.57003 6.81436 6.81433 7.57006 5.88925 7.57006H1.68078C0.755701 7.57006 0 6.81436 0 5.88928C0 4.9642 0.755701 4.2085 1.68078 4.2085H5.88925Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M12.6384 5.88928C12.6384 4.9642 13.3941 4.2085 14.3192 4.2085C15.2443 4.2085 16 4.9642 16 5.88928C16 6.81436 15.2443 7.57006 14.3192 7.57006H12.6384V5.88928Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M11.7915 5.88925C11.7915 6.81433 11.0358 7.57003 10.1107 7.57003C9.18563 7.57003 8.42993 6.81433 8.42993 5.88925V1.68078C8.42993 0.755701 9.18563 0 10.1107 0C11.0358 0 11.7915 0.755701 11.7915 1.68078V5.88925Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M10.1107 12.6382C11.0358 12.6382 11.7915 13.3939 11.7915 14.319C11.7915 15.244 11.0358 15.9997 10.1107 15.9997C9.18563 15.9997 8.42993 15.244 8.42993 14.319V12.6382H10.1107Z"
+          fill="#95A2B3"
+        />
+        <path
+          d="M10.1107 11.7917C9.18563 11.7917 8.42993 11.036 8.42993 10.111C8.42993 9.18588 9.18563 8.43018 10.1107 8.43018H14.3192C15.2443 8.43018 16 9.18588 16 10.111C16 11.036 15.2443 11.7917 14.3192 11.7917H10.1107Z"
+          fill="#95A2B3"
+        />
+      </symbol>
+      <symbol
+        id="githab"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 1C4.13437 1 1 4.21563 1 8.17813C1 11.35 3.00625 14.0375 5.7875 14.9875C5.83125 14.9969 5.86875 15 5.90625 15C6.16563 15 6.26563 14.8094 6.26563 14.6437C6.26563 14.4719 6.25937 14.0219 6.25625 13.4219C5.99375 13.4813 5.75937 13.5063 5.55 13.5063C4.20313 13.5063 3.89687 12.4594 3.89687 12.4594C3.57813 11.6313 3.11875 11.4094 3.11875 11.4094C2.50937 10.9813 3.11563 10.9687 3.1625 10.9687H3.16563C3.86875 11.0313 4.2375 11.7125 4.2375 11.7125C4.5875 12.325 5.05625 12.4969 5.475 12.4969C5.80313 12.4969 6.1 12.3906 6.275 12.3094C6.3375 11.8469 6.51875 11.5313 6.71873 11.35C5.16563 11.1687 3.53125 10.5531 3.53125 7.80313C3.53125 7.01873 3.80313 6.37813 4.25 5.87813C4.17813 5.69687 3.9375 4.96563 4.31875 3.97813C4.31875 3.97813 4.36875 3.9625 4.475 3.9625C4.72813 3.9625 5.3 4.05937 6.24375 4.71563C6.80313 4.55625 7.4 4.47813 7.99687 4.475C8.5906 4.47813 9.1906 4.55625 9.75 4.71563C10.6937 4.05937 11.2656 3.9625 11.5187 3.9625C11.625 3.9625 11.675 3.97813 11.675 3.97813C12.0563 4.96563 11.8156 5.69687 11.7437 5.87813C12.1906 6.38125 12.4625 7.02187 12.4625 7.80313C12.4625 10.5594 10.825 11.1656 9.2656 11.3437C9.5156 11.5656 9.7406 12.0031 9.7406 12.6719C9.7406 13.6313 9.73127 14.4063 9.73127 14.6406C9.73127 14.8094 9.82813 15 10.0875 15C10.125 15 10.1687 14.9969 10.2125 14.9875C12.9969 14.0375 15 11.3469 15 8.17813C15 4.21563 11.8656 1 8 1Z"
+          fill="#95A2B3"
+        />
+      </symbol>
+      <symbol
+        id="twitter"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.3751 3.42187C14.8313 3.6625 14.2501 3.825 13.6375 3.9C14.2625 3.525 14.7438 2.93125 14.9688 2.225C14.3844 2.57187 13.7375 2.825 13.0469 2.95937C12.4938 2.36875 11.7063 2 10.8375 2C9.16567 2 7.81253 3.35625 7.81253 5.02813C7.81253 5.26563 7.83753 5.49687 7.89067 5.71875C5.37505 5.59375 3.1438 4.3875 1.65317 2.55313C1.3938 3 1.2438 3.52187 1.2438 4.075C1.2438 5.125 1.7813 6.05313 2.5938 6.59687C2.0938 6.58437 1.62505 6.44687 1.2188 6.21875V6.25625C1.2188 7.725 2.26255 8.94687 3.64693 9.225C3.3938 9.29373 3.12505 9.33127 2.85005 9.33127C2.6563 9.33127 2.46567 9.31247 2.2813 9.275C2.66567 10.4781 3.78443 11.3531 5.10943 11.3781C4.07505 12.1906 2.7688 12.675 1.35005 12.675C1.1063 12.675 0.865673 12.6594 0.628174 12.6313C1.96255 13.5 3.55317 14 5.25943 14C10.8313 14 13.8751 9.3844 13.8751 5.38125C13.8751 5.25 13.8719 5.11875 13.8657 4.99063C14.4563 4.5625 14.9688 4.03125 15.3751 3.42187Z"
+          fill="#95A2B3"
+        />
+      </symbol>
+      <symbol
+        id="linear-icon-7"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.0847 30.3326C10.0847 33.1079 7.81759 35.375 5.04235 35.375C2.2671 35.375 0 33.1079 0 30.3326C0 27.5574 2.2671 25.2903 5.04235 25.2903H10.0847V30.3326Z"
+          fill="#E01E5A"
+        />
+        <path
+          d="M12.6254 30.3324C12.6254 27.5571 14.8925 25.29 17.6677 25.29C20.443 25.29 22.7101 27.5571 22.7101 30.3324V42.9578C22.7101 45.733 20.443 48.0001 17.6677 48.0001C14.8925 48.0001 12.6254 45.733 12.6254 42.9578V30.3324Z"
+          fill="#E01E5A"
+        />
+        <path
+          d="M17.6677 10.0847C14.8925 10.0847 12.6254 7.81759 12.6254 5.04235C12.6254 2.2671 14.8925 0 17.6677 0C20.443 0 22.7101 2.2671 22.7101 5.04235V10.0847H17.6677Z"
+          fill="#36C5F0"
+        />
+        <path
+          d="M17.6678 12.625C20.443 12.625 22.7101 14.8921 22.7101 17.6673C22.7101 20.4426 20.443 22.7097 17.6678 22.7097H5.04235C2.2671 22.7097 0 20.4426 0 17.6673C0 14.8921 2.2671 12.625 5.04235 12.625H17.6678Z"
+          fill="#36C5F0"
+        />
+        <path
+          d="M37.9153 17.6673C37.9153 14.8921 40.1824 12.625 42.9576 12.625C45.7329 12.625 48 14.8921 48 17.6673C48 20.4426 45.7329 22.7097 42.9576 22.7097H37.9153V17.6673Z"
+          fill="#2EB67D"
+        />
+        <path
+          d="M35.3746 17.6678C35.3746 20.443 33.1075 22.7101 30.3323 22.7101C27.557 22.7101 25.2899 20.443 25.2899 17.6678V5.04235C25.2899 2.2671 27.557 0 30.3323 0C33.1075 0 35.3746 2.2671 35.3746 5.04235V17.6678Z"
+          fill="#2EB67D"
+        />
+        <path
+          d="M30.3323 37.9148C33.1075 37.9148 35.3746 40.1819 35.3746 42.9571C35.3746 45.7324 33.1075 47.9995 30.3323 47.9995C27.557 47.9995 25.2899 45.7324 25.2899 42.9571V37.9148H30.3323Z"
+          fill="#ECB22E"
+        />
+        <path
+          d="M30.3323 35.375C27.557 35.375 25.2899 33.1079 25.2899 30.3326C25.2899 27.5574 27.557 25.2903 30.3323 25.2903H42.9577C45.7329 25.2903 48 27.5574 48 30.3326C48 33.1079 45.7329 35.375 42.9577 35.375H30.3323Z"
+          fill="#ECB22E"
+        />
+      </symbol>
+      <symbol
+        id="linear-icon-6"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M39 4H9C7.67392 4 6.40215 4.52678 5.46447 5.46447C4.52678 6.40215 4 7.67392 4 9V39C4 40.3261 4.52678 41.5979 5.46447 42.5355C6.40215 43.4732 7.67392 44 9 44H39C40.3261 44 41.5979 43.4732 42.5355 42.5355C43.4732 41.5979 44 40.3261 44 39V9C44 7.67392 43.4732 6.40215 42.5355 5.46447C41.5979 4.52678 40.3261 4 39 4ZM29.34 11.34C29.3373 11.1633 29.3701 10.9878 29.4365 10.824C29.5029 10.6602 29.6015 10.5114 29.7265 10.3865C29.8514 10.2615 30.0002 10.1629 30.164 10.0965C30.3278 10.0301 30.5033 9.9973 30.68 10C31.0269 10.0101 31.3568 10.1524 31.6022 10.3978C31.8476 10.6432 31.9899 10.9731 32 11.32V29.12C31.9601 29.4447 31.8029 29.7435 31.5579 29.9602C31.3129 30.177 30.9971 30.2966 30.67 30.2966C30.3429 30.2966 30.0271 30.177 29.7821 29.9602C29.5371 29.7435 29.3799 29.4447 29.34 29.12V11.34ZM22.66 10.66C22.66 10.3046 22.8012 9.96378 23.0525 9.71248C23.3038 9.46118 23.6446 9.32 24 9.32C24.3554 9.32 24.6962 9.46118 24.9475 9.71248C25.1988 9.96378 25.34 10.3046 25.34 10.66V30C25.34 30.3554 25.1988 30.6962 24.9475 30.9475C24.6962 31.1988 24.3554 31.34 24 31.34C23.6446 31.34 23.3038 31.1988 23.0525 30.9475C22.8012 30.6962 22.66 30.3554 22.66 30V10.66ZM16 11.34C16.0399 11.0153 16.1971 10.7165 16.4421 10.4998C16.6871 10.283 17.0029 10.1634 17.33 10.1634C17.6571 10.1634 17.9729 10.283 18.2179 10.4998C18.4629 10.7165 18.6201 11.0153 18.66 11.34V29.14C18.66 29.315 18.6252 29.4883 18.5576 29.6498C18.4901 29.8113 18.391 29.9577 18.2663 30.0805C18.1416 30.2034 17.9938 30.3002 17.8313 30.3653C17.6688 30.4305 17.495 30.4627 17.32 30.46C16.9731 30.4499 16.6432 30.3076 16.3978 30.0622C16.1524 29.8168 16.0101 29.4869 16 29.14V11.34ZM9.34 14C9.37989 13.6753 9.53714 13.3765 9.78213 13.1598C10.0271 12.943 10.3429 12.8234 10.67 12.8234C10.9971 12.8234 11.3129 12.943 11.5579 13.1598C11.8029 13.3765 11.9601 13.6753 12 14V26C11.9947 26.3519 11.8513 26.6876 11.6005 26.9346C11.3498 27.1816 11.012 27.32 10.66 27.32C10.3115 27.3148 9.97877 27.1741 9.73233 26.9277C9.48589 26.6812 9.34516 26.3485 9.34 26V14ZM38.2 34.34C34.088 37.3376 29.0847 38.8597 24 38.66C18.9153 38.8597 13.912 37.3376 9.8 34.34C9.59118 34.0958 9.47706 33.7847 9.47843 33.4634C9.4798 33.1421 9.59657 32.832 9.80746 32.5896C10.0184 32.3472 10.3093 32.1886 10.6273 32.1428C10.9454 32.097 11.2693 32.167 11.54 32.34C15.1838 34.8847 19.5589 36.1698 24 36C28.4443 36.1714 32.8219 34.8785 36.46 32.32C36.7307 32.147 37.0546 32.077 37.3727 32.1228C37.6907 32.1686 37.9816 32.3272 38.1925 32.5696C38.4034 32.812 38.5202 33.1221 38.5216 33.4434C38.5229 33.7647 38.4088 34.0758 38.2 34.32V34.34ZM38.66 26C38.6201 26.3247 38.4629 26.6235 38.2179 26.8402C37.9729 27.057 37.6571 27.1766 37.33 27.1766C37.0029 27.1766 36.6871 27.057 36.4421 26.8402C36.1971 26.6235 36.0399 26.3247 36 26V14C36.0053 13.6481 36.1487 13.3124 36.3995 13.0654C36.6502 12.8184 36.988 12.68 37.34 12.68C37.6901 12.68 38.0258 12.8191 38.2734 13.0666C38.5209 13.3142 38.66 13.6499 38.66 14V26Z"
+          fill="#F7F8F8"
+        />
+      </symbol>
+      <symbol
+        id="linear-icon-5"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_17_292)">
+          <path
+            d="M22.1723 15.42V42.189H2.12349e-06L22.1723 15.42ZM22.1723 5.81254C22.176 11.9378 17.2118 16.905 11.0858 16.905C4.95975 16.905 -0.00374788 11.9363 2.12349e-06 5.81104L22.1723 5.81254ZM25.8248 42.1905C25.8248 36.0675 30.7883 31.104 36.9113 31.104C43.0343 31.104 47.9978 36.0675 47.9978 42.1905H25.8248ZM25.8248 32.583V5.81104H48L25.8248 32.583Z"
+            fill="#F7F8F8"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_17_292">
+            <rect width="48" height="48" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        id="linear-icon-4"
+        width="32"
+        height="48"
+        viewBox="0 0 32 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.0001 23.9998C16.0001 21.878 16.843 19.8432 18.3433 18.3429C19.8436 16.8426 21.8784 15.9998 24.0001 15.9998C26.1219 15.9998 28.1567 16.8426 29.657 18.3429C31.1573 19.8432 32.0002 21.878 32.0002 23.9998C32.0002 26.1215 31.1573 28.1563 29.657 29.6566C28.1567 31.1569 26.1219 31.9998 24.0001 31.9998C21.8784 31.9998 19.8436 31.1569 18.3433 29.6566C16.843 28.1563 16.0001 26.1215 16.0001 23.9998Z"
+          fill="#F7F8F8"
+        />
+        <path
+          d="M0 40.0003C0 37.8785 0.842856 35.8437 2.34315 34.3434C3.84344 32.8431 5.87828 32.0002 8.00002 32.0002H16V40.0003C16 42.122 15.1572 44.1568 13.6569 45.6571C12.1566 47.1574 10.1218 48.0003 8.00002 48.0003C5.87828 48.0003 3.84344 47.1574 2.34315 45.6571C0.842856 44.1568 0 42.122 0 40.0003H0Z"
+          fill="#0ACF83"
+        />
+        <path
+          d="M16.0001 0V16H24.0001C26.1219 16 28.1567 15.1572 29.657 13.6569C31.1573 12.1566 32.0002 10.1218 32.0002 8.00002C32.0002 5.87828 31.1573 3.84344 29.657 2.34315C28.1567 0.842856 26.1219 0 24.0001 0L16.0001 0Z"
+          fill="#FF7262"
+        />
+        <path
+          d="M0 8.00002C0 10.1218 0.842856 12.1566 2.34315 13.6569C3.84344 15.1572 5.87828 16 8.00002 16H16V0H8.00002C5.87828 0 3.84344 0.842856 2.34315 2.34315C0.842856 3.84344 0 5.87828 0 8.00002H0Z"
+          fill="#F24E1E"
+        />
+        <path
+          d="M0 23.9998C0 26.1215 0.842856 28.1563 2.34315 29.6566C3.84344 31.1569 5.87828 31.9998 8.00002 31.9998H16V15.9998H8.00002C5.87828 15.9998 3.84344 16.8426 2.34315 18.3429C0.842856 19.8432 0 21.878 0 23.9998H0Z"
+          fill="#A259FF"
+        />
+      </symbol>
+      <symbol
+        id="linear-icon-3"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M43.4864 31.8338L25.7076 44.1422C25.2051 44.4876 24.6097 44.6725 23.9999 44.6725C23.3902 44.6725 22.7947 44.4876 22.2923 44.1422L4.51347 31.8338C4.00636 31.4814 3.62001 30.9815 3.40691 30.4019C3.19381 29.8223 3.1643 29.1912 3.32237 28.5942L8.44658 9.3783C8.56946 8.91753 8.83556 8.50771 9.20648 8.208C9.5774 7.90828 10.034 7.73417 10.5103 7.71078C10.9866 7.68739 11.458 7.81594 11.8565 8.07787C12.255 8.33981 12.56 8.72158 12.7274 9.1681L16.6019 19.5H31.3979L35.2725 9.16791C35.4399 8.72143 35.7449 8.3397 36.1434 8.0778C36.5419 7.8159 37.0133 7.68737 37.4895 7.71076C37.9658 7.73415 38.4223 7.90824 38.7932 8.20792C39.1642 8.50761 39.4303 8.91738 39.5532 9.37811L44.6775 28.5942C44.8356 29.1912 44.806 29.8223 44.5929 30.4019C44.3798 30.9815 43.9935 31.4814 43.4864 31.8338Z"
+          fill="#F7F8F8"
+        />
+      </symbol>
+
+      <symbol
+        id="linear-icon-2"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M24 3C12.4031 3 3 12.6469 3 24.5344C3 34.05 9.01874 42.1124 17.3625 44.9626C17.4937 44.9906 17.6062 45 17.7188 45C18.4969 45 18.7969 44.4282 18.7969 43.9312C18.7969 43.4156 18.7781 42.0656 18.7687 40.2656C17.9812 40.4438 17.2781 40.5188 16.65 40.5188C12.6094 40.5188 11.6906 37.3782 11.6906 37.3782C10.7344 34.8938 9.35626 34.2282 9.35626 34.2282C7.52812 32.9438 9.34688 32.9062 9.4875 32.9062H9.49688C11.6063 33.0938 12.7125 35.1374 12.7125 35.1374C13.7625 36.975 15.1687 37.4906 16.425 37.4906C17.4094 37.4906 18.3 37.1718 18.825 36.9282C19.0125 35.5406 19.5562 34.5938 20.1562 34.05C15.4969 33.5062 10.5938 31.6594 10.5938 23.4094C10.5938 21.0562 11.4094 19.1344 12.75 17.6344C12.5344 17.0906 11.8125 14.8969 12.9562 11.9344C12.9562 11.9344 13.1062 11.8875 13.425 11.8875C14.1844 11.8875 15.9 12.1781 18.7313 14.1469C20.4094 13.6687 22.2 13.4344 23.9906 13.425C25.7718 13.4344 27.5718 13.6687 29.25 14.1469C32.0812 12.1781 33.7968 11.8875 34.5562 11.8875C34.875 11.8875 35.025 11.9344 35.025 11.9344C36.1688 14.8969 35.4468 17.0906 35.2312 17.6344C36.5718 19.1438 37.3874 21.0656 37.3874 23.4094C37.3874 31.6782 32.475 33.4968 27.7968 34.0312C28.5468 34.6968 29.2218 36.0094 29.2218 38.0156C29.2218 40.8938 29.1938 43.2188 29.1938 43.9218C29.1938 44.4282 29.4844 45 30.2624 45C30.375 45 30.5062 44.9906 30.6374 44.9626C38.9906 42.1124 45 34.0406 45 24.5344C45 12.6469 35.5968 3 24 3Z"
+          fill="#F7F8F8"
+        />
+      </symbol>
+
+      <symbol
+        id="linear-icon-1"
+        viewBox="0 0 48 48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_17_333)">
+          <path
+            d="M47.326 43.144C48.224 41.648 48.224 40.152 47.326 38.656L27.886 4.862C26.992 3.368 25.496 2.766 24 2.766C22.504 2.766 21.01 3.664 20.114 4.862L13.832 15.926L15.328 16.824C20.114 19.516 24 23.402 26.692 28.188C29.086 32.376 30.58 36.86 30.88 41.648H26.394C26.096 37.758 24.898 33.87 22.806 30.28C20.712 26.094 17.422 22.804 13.236 20.41L11.738 19.516L5.75804 29.684L7.25204 30.582C11.14 32.972 13.832 36.86 14.43 41.348H4.56004C4.26204 41.348 3.96004 41.048 3.96004 41.048C3.96004 41.048 3.66404 40.748 3.96004 40.45L6.65604 35.664C5.75804 34.77 4.56004 34.168 3.36404 33.872L0.672035 38.658C-0.225965 40.154 -0.225965 41.65 0.672035 43.146C1.56804 44.638 2.76404 45.236 4.55804 45.236H18.316V43.444C18.316 40.154 17.418 37.162 15.924 34.17C14.726 31.78 12.932 29.984 10.84 28.49L12.934 24.6C15.628 26.692 18.02 29.086 19.812 32.078C21.906 35.664 22.804 39.554 22.804 43.442V45.234H34.466V43.442C34.466 37.462 32.972 31.478 29.682 26.096C27.288 21.308 23.4 17.422 18.912 14.43L23.4 6.656C23.702 6.356 24 6.356 24 6.356C24.3 6.356 24.3 6.356 24.598 6.656L44.04 40.448C44.336 40.744 44.04 41.046 44.04 41.046C44.04 41.046 43.74 41.346 43.44 41.346H38.954V44.936H43.44C45.232 45.234 46.43 44.636 47.326 43.144Z"
+            fill="#F7F8F8"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_17_333">
+            <rect width="48" height="48" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol
+        id="logo"
+        viewBox="0 0 85 22"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <mask
+          id="mask0_19_328"
+          style="mask-type: alpha"
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="85"
+          height="22"
+        >
+          <rect width="85" height="22" fill="url(#pattern0)" />
+        </mask>
+        <g mask="url(#mask0_19_328)">
+          <rect width="85" height="22" fill="url(#pattern1)" />
+          <rect x="28" width="61" height="24" fill="#F7F8F8" />
+        </g>
+        <defs>
+          <pattern
+            id="pattern0"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use
+              xlink:href="#image0_19_328"
+              transform="matrix(0.00157819 0 0 0.00609756 -0.00502152 0)"
+            />
+          </pattern>
+          <pattern
+            id="pattern1"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use
+              xlink:href="#image0_19_328"
+              transform="matrix(0.00157819 0 0 0.00609756 -0.00502152 0)"
+            />
+          </pattern>
+          <image
+            id="image0_19_328"
+            width="640"
+            height="164"
+            xlink:href="data:image/png;base64,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"
+          />
+        </defs>
+      </symbol>
+      <symbol id="arrow" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.64645 7.14645C3.45119 7.34171 3.45119 7.65829 3.64645 7.85355C3.84171 8.04882 4.1583 8.04882 4.35356 7.85355L7.85356 4.35355C7.90303 4.30409 7.93996 4.24684 7.96436 4.18575C7.98512 4.1338 7.99681 4.07907 7.99943 4.02398C7.99982 4.01599 8 4.008 8 4C8 3.99171 7.9998 3.98342 7.99939 3.97514C7.99662 3.91853 7.98444 3.86439 7.96436 3.81425C7.93996 3.75316 7.90303 3.69591 7.85356 3.64645L4.35356 0.146446C4.1583 -0.0488167 3.84171 -0.0488167 3.64645 0.146446C3.45119 0.341709 3.45119 0.658291 3.64645 0.853554L6.2929 3.5L0.5 3.5C0.223858 3.5 0 3.72386 0 4C0 4.27614 0.223858 4.5 0.5 4.5L6.2929 4.5L3.64645 7.14645Z"
+        />
+      </symbol>
+    </svg>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>

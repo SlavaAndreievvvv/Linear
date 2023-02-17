@@ -1,0 +1,23 @@
+@use 'utils' as u;
+
+.menu {
+  display: none;
+  @include u.media('tablet-wide') {
+    display: block;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin: 0 0 0 26px;
+    padding: 10px 0;
+    @include u.media('desktop') {
+      margin: 0 0 0 48px;
+    }
+  }
+  &__link {
+    @include u.text(u.rem(14px), 500, u.$color-grey-6, 160%);
+    text-decoration: none;
+  }
+}

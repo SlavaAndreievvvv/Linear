@@ -1,0 +1,42 @@
+@use 'utils' as u;
+
+.mini-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 576px;
+  padding: 40px 24px;
+  background: u.$color-grey-2;
+  border-radius: 8px;
+  &--mr {
+    margin-bottom: 24px;
+    @include u.media('desktop') {
+      margin-bottom: 0;
+    }
+  }
+  @include u.media('tablet-wide') {
+    padding-left: 32px;
+  }
+
+
+  &__img {
+    margin-right: 16px;
+    margin-bottom: auto;
+    @include u.media('tablet') {
+      margin-bottom: auto;
+      margin-top: auto;
+      margin-right: 24px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__caption {
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  &__subtitle {
+    text-align: left;
+  }
+}

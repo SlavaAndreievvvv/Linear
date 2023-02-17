@@ -1,0 +1,68 @@
+@use 'utils' as u;
+
+.footer {
+  background-color: u.$color-grey-2;
+  padding-top: 104px;
+  padding-bottom: 121px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  @include u.media('desktop') {
+    padding-left: calc(50% - 590px);
+    padding-right: calc(50% - 590px);
+    padding-bottom: 50px;
+    padding-top: 56px;
+    flex-direction: row;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 71px;
+    @include u.media('desktop') {
+      margin-right: 230px;
+      margin-bottom: auto;
+    }
+  }
+  &__link {
+    margin-right: 5px;
+  }
+  &__icon {
+    width: 61.82px;
+    height: 16px;
+  }
+  &__text {
+    @include u.text(u.rem(13px), 400, u.$color-grey-5, 90%);
+  }
+  &__social-links {
+    position: absolute;
+    bottom: 100px;
+    left: 16px;
+    @include u.media('desktop') {
+      left: calc(50% - 590px);
+      bottom: 64px;
+    }
+  }
+  &__social-link {
+    width: 16px;
+    height: 16px;
+    margin-right: 18px;   
+  }
+  &__block {
+    margin-right: 64px;
+    margin-bottom: 64px;
+    @include u.media('desktop') {
+      margin-bottom: 0px;
+    }
+  }
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

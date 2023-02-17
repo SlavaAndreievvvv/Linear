@@ -1,0 +1,50 @@
+@use 'utils' as u;
+
+.linear-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 56px;
+
+
+  &__caption {
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: left;
+    @include u.media('tablet-small') {
+      text-align: center;
+    }
+    @include u.media('desktop') {
+      text-align: left;
+    }
+  }
+  &__subtitle {
+    max-width: 800px;
+    margin-bottom: 56px;
+    text-align: left;
+    @include u.media('tablet-small') {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include u.media('desktop') {
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__card {
+    margin-bottom: 62px;
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include u.media('desktop') {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,43 @@
+@use 'utils' as u;
+
+.tools-section {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: u.$color-grey-2;
+  min-width: 0px;
+
+  @include u.media('tablet') {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  &__caption {
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    margin-bottom: 56px;
+    @include u.media('tablet') {
+      margin-bottom: 64px;
+    }
+  }
+  &__list {
+    max-width: 100vw;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-height: 320px;
+    @include u.media('tablet') {
+      gap: 24px;
+      max-height: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}
+

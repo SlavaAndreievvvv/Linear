@@ -1,0 +1,57 @@
+@use 'utils' as u;
+
+.roadmap-section {
+  background: u.$color-grey-2;
+  padding-top: 120px;
+  padding-bottom: 129px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  @include u.media('tablet') {
+    flex-direction: row;
+    align-items: center;
+  }
+  @include u.media('desktop') {
+    padding-left: calc(50% - 590px);
+  }
+
+  &__wrapper {
+    max-width: 400px;
+    margin-bottom: 59px;
+    padding-right: 16px;
+    @include u.media('tablet') {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__caption {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    text-align: left;
+  }
+  &__block {
+    width: 100%;
+    padding-top: 20px;
+    background: conic-gradient(from 228.06deg at 50% 55.6%, #4595A1 -1.87deg, #DF9C7D 36.14deg, #FA9487 90.75deg, #EB688D 132.74deg, #EB7089 167.61deg, #6A374D 251.25deg, #2A2244 284.08deg, #4595A1 358.13deg, #DF9C7D 396.14deg);
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+    @include u.media('tablet') {
+      margin-left: 70px;
+      padding-top: 40px;
+    }
+    @include u.media('desktop') {
+      margin-left: 143px;
+      padding-top: 40px;
+    }
+  }
+  &__picture {
+    width: 100%;
+    height: 100%;
+    min-height: 207px;
+    min-width: 346px;
+  }
+}
