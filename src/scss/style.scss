@@ -3,7 +3,6 @@
 @use './config/common';
 
 // Components
-@use './components/header';
 @use './components/caption';
 @use './components/burger';
 @use './components/burger-menu';
@@ -18,6 +17,7 @@
 @use './components/card-review';
 @use './components/mini-card';
 @use './components/block-footer';
+@use './components/header';
 @use './components/hero-section';
 @use './components/sponsors-section';
 @use './components/tools-section';

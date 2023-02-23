@@ -13,5 +13,9 @@
   }
   &__link {
     @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
+    transition: all .3s ease;
+    &:hover {
+      color: u.$color-white;
+    }
   }
 }

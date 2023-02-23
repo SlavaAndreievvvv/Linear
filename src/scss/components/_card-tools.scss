@@ -1,8 +1,8 @@
 @use 'utils' as u;
 
 .card-tools {
+  height: 100%;
   flex: 0 0 287px;
-  // width: 100%;
   min-height: 226px;
   max-height: 278px;
   display: flex;
@@ -14,9 +14,17 @@
   background: linear-gradient(180deg, #302F34 0%, #28272D 108.24%);
   box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.32);
   border-radius: 16px;
+  &:not(:last-child) {
+    scroll-snap-align: start;
+    scroll-margin-left: 16px;
+  }
+  &--end {
+    scroll-snap-align: end;
+    scroll-margin-right: 16px;
+    margin-right: 16px;
+  }
   @include u.media('tablet') {
     flex: 0 0 376px;
-    // width: 100%;
     padding-top: 48px;
     padding-right: 102px;
     padding-bottom: 48px;

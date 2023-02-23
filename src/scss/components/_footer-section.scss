@@ -40,6 +40,7 @@
     @include u.text(u.rem(13px), 400, u.$color-grey-5, 90%);
   }
   &__social-links {
+    cursor: pointer;
     position: absolute;
     bottom: 100px;
     left: 16px;

@@ -14,23 +14,7 @@ function showBurgerMenu () {
 
 burger.addEventListener('click', showBurgerMenu);
 
-// GRID
-// // const grid = document.querySelector('#grid');
 
-// // const msnry = new Masonry( grid, {
-// //   itemSelector: '.card-review',
-// //   percentPosition: true,
-// //   fitWidth: true,
-// });
-
-// SLIDER
-
-new Swiper('.tools-section__list', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-});
 
 
 
