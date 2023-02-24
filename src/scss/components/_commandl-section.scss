@@ -68,6 +68,12 @@
     padding-top: 48px;
     padding-bottom: 24px;
     padding-left: 36px;
+    @include u.media('phone-wide') {
+      height: 436px;
+      border-radius: 16px;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
     @include u.media('tablet') {
       height: 626px;
       border-radius: 16px;
