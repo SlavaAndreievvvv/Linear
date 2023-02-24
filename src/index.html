@@ -27,6 +27,10 @@
       href="/src/assets/images/safari-pinned-tab.svg"
       color="#5bbad5"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#ffffff" />
     <title>Linear</title>
@@ -234,81 +238,92 @@
       <p class="tools-section__subtitle subtitle sebtitle--size container">
         Opinionated and designed for daily use.
       </p>
-      <div class="tools-section__list">
-        <div class="tools-section__wrapper">
-          <div class="tools-section__card card-tools">
-            <img
-              class="card-tools__img card-tools__img--first"
-              src="./assets/svg/tools-img-1.svg"
-              alt="image"
-            />
-            <span class="card-tools__title">Built for speed</span>
-            <span class="card-tools__description">
-              Synchronized in real-time across all users. No spinners or
-              waiting.
-            </span>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper mySwiper__wrapper" style="width: auto">
+          <div class="swiper-slide">
+            <div class="tools-section__card card-tools">
+              <img
+                class="card-tools__img card-tools__img--first"
+                src="./assets/svg/tools-img-1.svg"
+                alt="image"
+              />
+              <span class="card-tools__title">Built for speed</span>
+              <span class="card-tools__description">
+                Synchronized in real-time across all users. No spinners or
+                waiting.
+              </span>
+            </div>
           </div>
-          <div class="tools-section__card card-tools">
-            <img
-              class="card-tools__img card-tools__img--first"
-              src="./assets/svg/tools-img-1.svg"
-              alt="image"
-            />
-            <span class="card-tools__title">Built for speed</span>
-            <span class="card-tools__description">
-              Synchronized in real-time across all users. No spinners or
-              waiting.
-            </span>
+          <div class="swiper-slide">
+            <div class="tools-section__card card-tools">
+              <img
+                class="card-tools__img"
+                src="./assets/svg/tools-img-2.svg"
+                alt="image"
+              />
+              <span class="card-tools__title">Keyboard first design</span>
+              <span class="card-tools__description">
+                Optimized for efficiency with extensive keyboard shortcuts.
+              </span>
+            </div>
           </div>
-          <div class="tools-section__card card-tools">
-            <img
-              class="card-tools__img card-tools__img--first"
-              src="./assets/svg/tools-img-1.svg"
-              alt="image"
-            />
-            <span class="card-tools__title">Built for speed</span>
-            <span class="card-tools__description">
-              Synchronized in real-time across all users. No spinners or
-              waiting.
-            </span>
+          <div class="swiper-slide">
+            <div class="tools-section__card card-tools">
+              <img
+                class="card-tools__img"
+                src="./assets/svg/tools-img-3.svg"
+                alt="image"
+              />
+              <span class="card-tools__title">For software teams</span>
+              <span class="card-tools__description">
+                Created by software people for software product teams.
+              </span>
+            </div>
           </div>
-          <div class="tools-section__card card-tools">
-            <img
-              class="card-tools__img card-tools__img--first"
-              src="./assets/svg/tools-img-1.svg"
-              alt="image"
-            />
-            <span class="card-tools__title">Built for speed</span>
-            <span class="card-tools__description">
-              Synchronized in real-time across all users. No spinners or
-              waiting.
-            </span>
+          <div class="swiper-slide">
+            <div class="tools-section__card card-tools">
+              <img
+                class="card-tools__img"
+                src="./assets/svg/tools-img-4.svg"
+                alt="image"
+              />
+              <span class="card-tools__title">Works offline</span>
+              <span class="card-tools__description">
+                Access and make changes with or without internet access
+              </span>
+            </div>
           </div>
-          <div class="tools-section__card card-tools">
-            <img
-              class="card-tools__img card-tools__img--first"
-              src="./assets/svg/tools-img-1.svg"
-              alt="image"
-            />
-            <span class="card-tools__title">Built for speed</span>
-            <span class="card-tools__description">
-              Synchronized in real-time across all users. No spinners or
-              waiting.
-            </span>
+          <div class="swiper-slide">
+            <div class="tools-section__card card-tools">
+              <img
+                class="card-tools__img"
+                src="./assets/svg/tools-img-5.svg"
+                alt="image"
+              />
+              <span class="card-tools__title">Light and dark UI</span>
+              <span class="card-tools__description">
+                We have multiple themes. Use light or dark, your choice.
+              </span>
+            </div>
           </div>
-          <div class="tools-section__card card-tools card-tools--end">
-            <img
-              class="card-tools__img card-tools__img--first"
-              src="./assets/svg/tools-img-1.svg"
-              alt="image"
-            />
-            <span class="card-tools__title">Built for speed</span>
-            <span class="card-tools__description">
-              Synchronized in real-time across all users. No spinners or
-              waiting.
-            </span>
+          <div class="swiper-slide">
+            <div class="tools-section__card card-tools">
+              <img
+                class="card-tools__img"
+                src="./assets/svg/tools-img-6.svg"
+                alt="image"
+              />
+              <span class="card-tools__title">Multiple teams</span>
+              <span class="card-tools__description">
+                Have all your teams in one shared workspace.
+              </span>
+            </div>
           </div>
         </div>
+        <div
+          class="swiper-pagination"
+          style="display: flex; margin-left: 16px"
+        ></div>
       </div>
     </section>
     <section class="interface-section">
@@ -911,71 +926,48 @@
     </footer>
     <!-- SVG -->
     <svg style="opacity: 0; z-index: -1; position: fixed">
-      <symbol
-        id="slack"
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <symbol id="slack" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M3.36156 10.111C3.36156 11.036 2.60586 11.7917 1.68078 11.7917C0.7557 11.7917 0 11.036 0 10.111C0 9.18588 0.7557 8.43018 1.68078 8.43018H3.36156V10.111Z"
-          fill="#95A2B3"
         />
         <path
           d="M4.2085 10.111C4.2085 9.18588 4.9642 8.43018 5.88928 8.43018C6.81436 8.43018 7.57006 9.18588 7.57006 10.111V14.3194C7.57006 15.2445 6.81436 16.0002 5.88928 16.0002C4.9642 16.0002 4.2085 15.2445 4.2085 14.3194V10.111Z"
-          fill="#95A2B3"
         />
         <path
           d="M5.88928 3.36156C4.9642 3.36156 4.2085 2.60586 4.2085 1.68078C4.2085 0.7557 4.9642 0 5.88928 0C6.81436 0 7.57006 0.7557 7.57006 1.68078V3.36156H5.88928Z"
-          fill="#95A2B3"
         />
         <path
           d="M5.88925 4.2085C6.81433 4.2085 7.57003 4.9642 7.57003 5.88928C7.57003 6.81436 6.81433 7.57006 5.88925 7.57006H1.68078C0.755701 7.57006 0 6.81436 0 5.88928C0 4.9642 0.755701 4.2085 1.68078 4.2085H5.88925Z"
-          fill="#95A2B3"
         />
         <path
           d="M12.6384 5.88928C12.6384 4.9642 13.3941 4.2085 14.3192 4.2085C15.2443 4.2085 16 4.9642 16 5.88928C16 6.81436 15.2443 7.57006 14.3192 7.57006H12.6384V5.88928Z"
-          fill="#95A2B3"
         />
         <path
           d="M11.7915 5.88925C11.7915 6.81433 11.0358 7.57003 10.1107 7.57003C9.18563 7.57003 8.42993 6.81433 8.42993 5.88925V1.68078C8.42993 0.755701 9.18563 0 10.1107 0C11.0358 0 11.7915 0.755701 11.7915 1.68078V5.88925Z"
-          fill="#95A2B3"
         />
         <path
           d="M10.1107 12.6382C11.0358 12.6382 11.7915 13.3939 11.7915 14.319C11.7915 15.244 11.0358 15.9997 10.1107 15.9997C9.18563 15.9997 8.42993 15.244 8.42993 14.319V12.6382H10.1107Z"
-          fill="#95A2B3"
         />
         <path
           d="M10.1107 11.7917C9.18563 11.7917 8.42993 11.036 8.42993 10.111C8.42993 9.18588 9.18563 8.43018 10.1107 8.43018H14.3192C15.2443 8.43018 16 9.18588 16 10.111C16 11.036 15.2443 11.7917 14.3192 11.7917H10.1107Z"
-          fill="#95A2B3"
         />
       </symbol>
       <symbol
         id="githab"
-        width="16"
-        height="16"
         viewBox="0 0 16 16"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M8 1C4.13437 1 1 4.21563 1 8.17813C1 11.35 3.00625 14.0375 5.7875 14.9875C5.83125 14.9969 5.86875 15 5.90625 15C6.16563 15 6.26563 14.8094 6.26563 14.6437C6.26563 14.4719 6.25937 14.0219 6.25625 13.4219C5.99375 13.4813 5.75937 13.5063 5.55 13.5063C4.20313 13.5063 3.89687 12.4594 3.89687 12.4594C3.57813 11.6313 3.11875 11.4094 3.11875 11.4094C2.50937 10.9813 3.11563 10.9687 3.1625 10.9687H3.16563C3.86875 11.0313 4.2375 11.7125 4.2375 11.7125C4.5875 12.325 5.05625 12.4969 5.475 12.4969C5.80313 12.4969 6.1 12.3906 6.275 12.3094C6.3375 11.8469 6.51875 11.5313 6.71873 11.35C5.16563 11.1687 3.53125 10.5531 3.53125 7.80313C3.53125 7.01873 3.80313 6.37813 4.25 5.87813C4.17813 5.69687 3.9375 4.96563 4.31875 3.97813C4.31875 3.97813 4.36875 3.9625 4.475 3.9625C4.72813 3.9625 5.3 4.05937 6.24375 4.71563C6.80313 4.55625 7.4 4.47813 7.99687 4.475C8.5906 4.47813 9.1906 4.55625 9.75 4.71563C10.6937 4.05937 11.2656 3.9625 11.5187 3.9625C11.625 3.9625 11.675 3.97813 11.675 3.97813C12.0563 4.96563 11.8156 5.69687 11.7437 5.87813C12.1906 6.38125 12.4625 7.02187 12.4625 7.80313C12.4625 10.5594 10.825 11.1656 9.2656 11.3437C9.5156 11.5656 9.7406 12.0031 9.7406 12.6719C9.7406 13.6313 9.73127 14.4063 9.73127 14.6406C9.73127 14.8094 9.82813 15 10.0875 15C10.125 15 10.1687 14.9969 10.2125 14.9875C12.9969 14.0375 15 11.3469 15 8.17813C15 4.21563 11.8656 1 8 1Z"
-          fill="#95A2B3"
         />
       </symbol>
       <symbol
         id="twitter"
-        width="16"
-        height="16"
         viewBox="0 0 16 16"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M15.3751 3.42187C14.8313 3.6625 14.2501 3.825 13.6375 3.9C14.2625 3.525 14.7438 2.93125 14.9688 2.225C14.3844 2.57187 13.7375 2.825 13.0469 2.95937C12.4938 2.36875 11.7063 2 10.8375 2C9.16567 2 7.81253 3.35625 7.81253 5.02813C7.81253 5.26563 7.83753 5.49687 7.89067 5.71875C5.37505 5.59375 3.1438 4.3875 1.65317 2.55313C1.3938 3 1.2438 3.52187 1.2438 4.075C1.2438 5.125 1.7813 6.05313 2.5938 6.59687C2.0938 6.58437 1.62505 6.44687 1.2188 6.21875V6.25625C1.2188 7.725 2.26255 8.94687 3.64693 9.225C3.3938 9.29373 3.12505 9.33127 2.85005 9.33127C2.6563 9.33127 2.46567 9.31247 2.2813 9.275C2.66567 10.4781 3.78443 11.3531 5.10943 11.3781C4.07505 12.1906 2.7688 12.675 1.35005 12.675C1.1063 12.675 0.865673 12.6594 0.628174 12.6313C1.96255 13.5 3.55317 14 5.25943 14C10.8313 14 13.8751 9.3844 13.8751 5.38125C13.8751 5.25 13.8719 5.11875 13.8657 4.99063C14.4563 4.5625 14.9688 4.03125 15.3751 3.42187Z"
-          fill="#95A2B3"
         />
       </symbol>
       <symbol
@@ -1186,6 +1178,7 @@
         />
       </symbol>
     </svg>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

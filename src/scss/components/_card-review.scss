@@ -7,7 +7,7 @@
   box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.32);
   border-radius: 8px;
   padding: 16px;
-  max-width: 381px;
+  max-width: 394px;
   height: 100%;
   
   &__avatar {
@@ -30,6 +30,10 @@
   &__link {
     @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
     margin-right: 12px;
+    transition: all .3s ease;
+    &:hover {
+      color: u.$color-white;
+    }
   }
   &__date {
     @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);

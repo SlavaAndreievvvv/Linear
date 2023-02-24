@@ -1,7 +1,5 @@
 'use strict';
 
-const { default: Swiper } = require("swiper");
-
 // BURGER
 const burger = document.querySelector('#burger');
 
@@ -14,7 +12,41 @@ function showBurgerMenu () {
 
 burger.addEventListener('click', showBurgerMenu);
 
+//Swiper
 
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  mousewheel: true,
+  keyboard: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageDown: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      grid: {
+        rows: 1,
+        fill: "row",
+      },
+    },
+    1248: {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 

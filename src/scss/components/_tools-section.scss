@@ -12,44 +12,20 @@
   }
 
   &__caption {
+    text-align: start;
     margin-bottom: 24px;
+    @include u.media('tablet') {
+      text-align: center;
+    }
   }
   &__subtitle {
     margin-bottom: 56px;
+    text-align: start;
     @include u.media('tablet') {
       margin-bottom: 64px;
-    }
-  }
-  &__list {
-    padding-left: 16px;
-    overflow: hidden;
-  }
-  &__wrapper {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    margin-bottom: 32px;
-    &::-webkit-scrollbar {
-      width: 0;
-    }
-    @include u.media('tablet-wide') {
-      gap: 24px;
-      max-height: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 0;
+      text-align: center;
     }
   }
 }
+
 

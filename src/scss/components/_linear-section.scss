@@ -45,6 +45,5 @@
   align-items: center;
   @include u.media('desktop') {
     flex-direction: row;
-    justify-content: space-between;
   }
 }

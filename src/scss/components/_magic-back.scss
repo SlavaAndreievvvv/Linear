@@ -30,6 +30,13 @@
     display: flex;
     align-items: center;
     left: 211px;
+    transition: all .3s ease;
+    &:hover {
+      color: u.$color-dark-purple;
+    }
+    &:hover > .magic-back__icon {
+      fill: u.$color-dark-purple;
+    }
   }
   &__icon {
     width: 8px;

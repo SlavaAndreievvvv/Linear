@@ -24,6 +24,13 @@
     @include u.text(u.rem(14px), 500, u.$color-purple, 160%);
     margin-right: 24px;
     margin-left: 0px;
+    border-radius: 8px;
+    padding: 2px 3px;
+    transition: all .3s ease;
+    &:hover {
+      box-shadow: 0px 0px 9px 0px u.$color-dark-purple;;
+
+    }
     @include u.media('tablet-wide') {
       margin-left: 30px;
       margin-right: 24px;

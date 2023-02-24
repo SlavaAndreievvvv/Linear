@@ -1,0 +1,47 @@
+@use 'utils' as u;
+
+.mySwiper {
+  height: 280px;
+  width: 100%;
+  @include u.media('tablet-medium') {
+    height: 340px;
+  }
+  @include u.media('desktop') {
+    height: 100%;
+  }
+}
+
+.mySwiper .swiper-wrapper {
+  width: auto!important;
+  background-color: u.$color-grey-2;
+  margin-left: 16px;
+  margin-right: 16px;
+  @include u.media('tablet-medium') {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  @include u.media('desktop') {
+    max-width: 1200px!important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.mySwiper .swiper-pagination {
+  background-color: u.$color-grey-2;
+  width: 100%;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #3e4149;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: u.$swiper-pagination-color;
+}
+
+.mySwiper .swiper-slide {
+  width: auto;
+}

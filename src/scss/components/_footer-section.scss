@@ -50,9 +50,14 @@
     }
   }
   &__social-link {
-    width: 16px;
-    height: 16px;
-    margin-right: 18px;   
+    fill: u.$color-grey-5;
+    width: 18px;
+    height: 18px;
+    margin-right: 18px;
+    transition: all .3s ease;
+    &:hover {
+      fill: u.$color-purple;
+    }  
   }
   &__block {
     margin-right: 64px;

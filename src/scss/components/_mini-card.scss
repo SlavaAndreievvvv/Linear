@@ -3,7 +3,7 @@
 .mini-card {
   display: flex;
   flex-direction: row;
-  max-width: 576px;
+  max-width: 594px;
   padding: 40px 24px;
   background: u.$color-grey-2;
   border-radius: 8px;
@@ -11,10 +11,12 @@
     margin-bottom: 24px;
     @include u.media('desktop') {
       margin-bottom: 0;
+      margin-right: 24px;
     }
   }
   @include u.media('tablet-wide') {
     padding-left: 32px;
+    padding-right: 63px;
   }
 
 
