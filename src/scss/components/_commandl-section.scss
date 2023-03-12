@@ -1,4 +1,4 @@
-@use 'utils' as u;
+@use "utils" as u;
 
 .commandl-section {
   background-color: u.$color-grey-2;
@@ -7,11 +7,11 @@
   padding-left: 16px;
   display: flex;
   flex-direction: column;
-  @include u.media('tablet') {
+  @include u.media("tablet") {
     align-items: center;
     padding-right: 16px;
   }
-  @include u.media('desktop') {
+  @include u.media("desktop") {
     padding-left: calc(50% - 590px);
     padding-right: calc(50% - 590px);
     padding-top: 140px;
@@ -22,6 +22,7 @@
     margin-bottom: 24px;
     display: flex;
     flex-direction: row;
+    gap: 16px;
   }
   &__link {
     display: flex;
@@ -29,24 +30,22 @@
     justify-content: center;
     width: 74px;
     height: 74px;
-    background: linear-gradient(180deg, #302F34 0%, #28272D 108.24%);
-    box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.32);
+    background: linear-gradient(180deg, #302f34 0%, #28272d 108.24%);
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.32);
     border-radius: 16px;
-    &:first-of-type {
-      margin-right: 16px;
-    }
+    transition: all 0.5s ease;
   }
   &__caption {
     width: 100%;
     margin-bottom: 24px;
     text-align: left;
-    @include u.media('tablet') {
+    @include u.media("tablet") {
       text-align: center;
     }
   }
   &__subtitle {
     text-align: left;
-    @include u.media('tablet') {
+    @include u.media("tablet") {
       text-align: center;
     }
   }
@@ -62,50 +61,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: conic-gradient(from 228.06deg at 50% 55.6%, #B25F5F 0deg, #5A306E 84.17deg, #66A1E0 131.83deg, #F4BD6A 173.39deg, #EB9363 260.48deg, #D86E58 314.67deg, #B25F5F 360deg);
+    background: conic-gradient(
+      from 228.06deg at 50% 55.6%,
+      #b25f5f 0deg,
+      #5a306e 84.17deg,
+      #66a1e0 131.83deg,
+      #f4bd6a 173.39deg,
+      #eb9363 260.48deg,
+      #d86e58 314.67deg,
+      #b25f5f 360deg
+    );
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding-top: 48px;
     padding-bottom: 24px;
     padding-left: 36px;
-    @include u.media('phone-wide') {
+    @include u.media("phone-wide") {
       height: 436px;
       border-radius: 16px;
       padding-top: 100px;
       padding-bottom: 50px;
     }
-    @include u.media('tablet') {
+    @include u.media("tablet") {
       height: 626px;
       border-radius: 16px;
       padding-top: 100px;
       padding-bottom: 50px;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 1600px;
       height: 1600px;
-      background-image: conic-gradient(transparent, transparent,
-      transparent, #d400d4);
-      animation: animate 4s linear infinite;
-      animation-delay: -2s;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 1600px;
       height: 1600px;
-      background-image: conic-gradient(transparent, transparent,
-      transparent, #00ccff);
-      animation: animate 4s linear infinite;
     }
   }
   &__picture {
     width: 287px;
-    @include u.media('phone-wide') {
+
+    @include u.media("phone-wide") {
       width: 400px;
     }
-    @include u.media('tablet') {
+    @include u.media("tablet") {
       width: 700px;
     }
   }
@@ -117,13 +119,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: conic-gradient(from 228.06deg at 50% 55.6%, #B25F5F 0deg, #5A306E 84.17deg, #66A1E0 131.83deg, #F4BD6A 173.39deg, #EB9363 260.48deg, #D86E58 314.67deg, #B25F5F 360deg);
+    background: conic-gradient(
+      from 228.06deg at 50% 55.6%,
+      #b25f5f 0deg,
+      #5a306e 84.17deg,
+      #66a1e0 131.83deg,
+      #f4bd6a 173.39deg,
+      #eb9363 260.48deg,
+      #d86e58 314.67deg,
+      #b25f5f 360deg
+    );
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding-top: 48px;
     padding-bottom: 24px;
     padding-left: 36px;
-    @include u.media('tablet') {
+    @include u.media("tablet") {
       border-radius: 16px;
       padding-top: 100px;
       padding-bottom: 50px;
@@ -138,4 +149,38 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.onkeydown #KeyB {
+  box-shadow: 5px 4px 7px #092f8f7e;
+}
+
+.animate .commandl-section__block::before {
+  animation: animate 4s linear infinite -2s;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #00ccff
+  );
+}
+.animate .commandl-section__block::after {
+  animation: animate 4s linear infinite;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #d400d4
+  );
+}
+
+.KeyB {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 120%;
+  text-align: center;
+  color: u.$color-grey-6;
+}
+.KeyB:nth-child(1) {
+  font-size: 34px;
 }
