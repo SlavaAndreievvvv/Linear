@@ -1,0 +1,40 @@
+@use 'utils' as u;
+
+.hero-section {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include u.media('tablet') {
+    padding-top: 80px;
+  }
+  &__magic-back {
+    margin-bottom: 40px;
+    @include u.media('tablet') {
+      margin-bottom: 24px;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    @include u.media('tablet') {
+      margin-bottom: 32px;
+      max-width: 740px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+    @include u.media('tablet') {
+      margin-bottom: 39px;
+      max-width: 730px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}

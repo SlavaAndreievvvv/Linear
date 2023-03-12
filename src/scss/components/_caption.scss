@@ -1,0 +1,18 @@
+@use 'utils' as u;
+
+.caption {
+  @include u.text(u.rem(24px), 600, u.$color-grey-6, 150%);
+  text-align: center;
+
+  @include u.media('tablet') {
+    font-size: u.rem(44px);
+    width: 715px;
+  }
+  &--linear {
+    font-size: u.rem(18px);
+    font-weight: 500;
+    @include u.media('tablet') {
+      font-size: u.rem(20px);
+    }
+  }
+}

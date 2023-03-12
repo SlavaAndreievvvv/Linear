@@ -1,0 +1,47 @@
+@use 'utils' as u;
+
+
+.magic-back {
+  background: u.$color-grey-1;
+  border: 1px solid u.$color-grey-3;
+  border-radius: 24px;
+  padding: 8px 106px 8px 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__text {
+    @include u.text(u.rem(13px), 400, u.$color-grey-7, 90%);
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 1px;
+      top: 5px;
+      left: 180px;
+      transform: rotate(90deg);
+      background: u.$color-grey-3; 
+    }
+  }
+  &__link {
+    @include u.text(u.rem(13px), 400, u.$color-purple, 150%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 211px;
+    transition: all .3s ease;
+    &:hover {
+      color: u.$color-dark-purple;
+    }
+    &:hover > .magic-back__icon {
+      fill: u.$color-dark-purple;
+    }
+  }
+  &__icon {
+    width: 8px;
+    height: 8px;
+    fill: u.$color-purple;
+    margin-left: 6px;
+  }
+}

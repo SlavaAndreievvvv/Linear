@@ -1,0 +1,54 @@
+@use 'utils' as u;
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid u.$color-grey-3;
+
+  &__container {
+    display: flex;
+    max-width: 1220px;
+    margin: 0px auto;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 54px;
+    @include u.media('tablet-wide') {
+      padding: 0 30px;
+    }
+  }
+  &__icon {
+    width: 85px;
+    height: 22px;
+  }
+  &__link {
+    @include u.text(u.rem(14px), 500, u.$color-purple, 160%);
+    margin-right: 24px;
+    margin-left: 0px;
+    border-radius: 8px;
+    padding: 2px 3px;
+    transition: all .3s ease;
+    &:hover {
+      box-shadow: 0px 0px 9px 0px u.$color-dark-purple;;
+
+    }
+    @include u.media('tablet-wide') {
+      margin-left: 30px;
+      margin-right: 24px;
+    }
+    @include u.media('desktop') {
+      margin-left: 70px;
+      margin-right: 24px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__button {
+    margin-right: 27px;
+    @include u.media('tablet-wide') {
+      margin-right: 0;
+    }
+  }
+} 

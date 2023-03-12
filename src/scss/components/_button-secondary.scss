@@ -1,0 +1,16 @@
+@use 'utils' as u;
+
+.button-secondary {
+  @include u.text(u.rem(14px), 500, u.$color-grey-6, 160%);
+  padding: 4px 20px;
+  border-radius: 100px;
+  background: u.$color-purple;
+  transition: all .2s ease;
+  &:hover {
+    background-color: u.$color-dark-purple;
+  }
+  &:focus {
+    background: u.$color-purple;
+    box-shadow: 0 0 0 2px u.$color-dark-purple;
+  }
+}
