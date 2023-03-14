@@ -1,0 +1,31 @@
+@use 'utils' as u;
+
+.tools-section {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  background-color: u.$color-grey-2;
+  min-width: 0px;
+
+  @include u.media('tablet') {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  &__caption {
+    text-align: start;
+    margin-bottom: 24px;
+    @include u.media('tablet') {
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 56px;
+    text-align: start;
+    @include u.media('tablet') {
+      margin-bottom: 64px;
+      text-align: center;
+    }
+  }
+}
+
+

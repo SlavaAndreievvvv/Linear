@@ -1,9 +1,9 @@
-@use 'utils';
+@use 'utils' as u;
 
 .title {
+  @include u.text(u.rem(32px), 600, u.$color-grey-6, 120%);
   text-align: center;
-  @include utils.text(utils.rem(32px), 700, utils.$color-white);
-  @include utils.media('tablet') {
-    font-size: utils.rem(42px);
+  @include u.media('tablet') {
+    font-size: u.rem(66px);
   }
 }

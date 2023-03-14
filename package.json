@@ -16,8 +16,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.0",
     "@parcel/transformer-sass": "^2.8.0",
+    "@parcel/transformer-webmanifest": "^2.8.0",
     "parcel": "^2.8.0",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "masonry-layout": "^4.2.2",
+    "swiper": "^9.0.5"
   }
 }

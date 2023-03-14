@@ -1,0 +1,85 @@
+@use 'utils' as u;
+
+.card-review {
+  display: flex;
+  flex-direction: row;
+  background: #232426;
+  box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.32);
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 385px;
+  height: 100%;
+  
+  &__avatar {
+    margin-bottom: auto;
+    margin-right: 16px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+  }
+  &__name {
+    @include u.text(u.rem(14px), 500, u.$color-grey-6, 160%);
+    margin-right: 8px;
+  }
+  &__link {
+    @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
+    margin-right: 12px;
+    transition: all .3s ease;
+    &:hover {
+      color: u.$color-white;
+    }
+  }
+  &__date {
+    @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
+    position: relative;
+    &::before {
+      content: "";
+      width: 2.8px;
+      height: 2.8px;
+      background-color: #95a2b3;
+      border-radius: 19px;
+      position: absolute;
+      top: 10px;
+      left: -7px;
+    }
+  }
+  &__text {
+    @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
+  }
+  &--position-4 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+  &--position-5 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-22px);
+    }
+  }
+  &--position-7 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+  &--position-8 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+  &--position-10 {
+    transform: translateY(0px);
+    @include u.media('desktop') {
+      transform: translateY(-68px);
+    }
+  }
+}
