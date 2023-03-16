@@ -12,7 +12,7 @@ function showBurgerMenu() {
 
 burger.addEventListener("click", showBurgerMenu);
 
-//Swiper
+// SWIPER
 
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,
@@ -48,7 +48,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//
+// Windows or Mac
 let $img = document.querySelector("#image");
 let $imgWrap = document.querySelector(".commandl-section__images");
 
@@ -67,33 +67,23 @@ let animateOnKeyDown = (key1, key2) => {
   };
 };
 
-let sBrowser,
-  sUsrAg = navigator.userAgent;
-
-if (sUsrAg.indexOf("Firefox") > -1) {
-  sBrowser = "Mozilla Firefox";
-} else if (sUsrAg.indexOf("Opera") > -1) {
-  sBrowser = "Opera";
-} else if (sUsrAg.indexOf("Trident") > -1) {
-  sBrowser = "Microsoft Internet Explorer";
-} else if (sUsrAg.indexOf("Edge") > -1) {
-  sBrowser = "Microsoft Edge";
-} else if (sUsrAg.indexOf("Chrome") > -1) {
-  sBrowser = "Google Chrome or Chromium";
-  let $macImg = $imgWrap.insertAdjacentHTML(
-    "afterbegin",
+let $modifierKeyPrefix = $imgWrap.insertAdjacentHTML(
+  "afterbegin",
+  `
+          <div class="commandl-section__link KeyB" id="KeyB">
+            <a class="commandl-section__link KeyB" id="KeyB">
+              Ctrl
+            </a>
+          </div>
     `
-      <div class="commandl-section__link KeyB" id="KeyB">
-        <a class="commandl-section__link KeyB" id="KeyB">
-          Ctrl
-        </a>
-      </div>
-      `
-  );
-  animateOnKeyDown(17, 66);
-} else if (sUsrAg.indexOf("Safari") > -1) {
-  sBrowser = "Apple Safari";
-  let $macImg = $imgWrap.insertAdjacentHTML(
+);
+animateOnKeyDown(17, 66);
+
+if (
+  navigator.platform.indexOf("Mac") === 0 ||
+  navigator.platform === "iPhone"
+) {
+  $modifierKeyPrefix = $imgWrap.insertAdjacentHTML(
     "afterbegin",
     `
       <div class="commandl-section__link KeyB" id="KeyB">
@@ -106,13 +96,7 @@ if (sUsrAg.indexOf("Firefox") > -1) {
           />
         </a>
       </div>
-      `
+  `
   );
   animateOnKeyDown(55, 11);
-} else {
-  sBrowser = "unknown";
 }
-
-// document.onkeydown = function (e) {
-//   console.log(e);
-// };
