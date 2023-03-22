@@ -1,5 +1,7 @@
 "use strict";
 
+import commandIcon from "../src/assets/images/command-line-img-1.svg";
+
 // BURGER
 const burger = document.querySelector("#burger");
 
@@ -67,29 +69,17 @@ let animateOnKeyDown = (key1, key2) => {
   };
 };
 
-let $modifierKeyPrefix = $imgWrap.insertAdjacentHTML(
-  "afterbegin",
-  `
-          <div class="commandl-section__link KeyB" id="KeyB">
-            <a class="commandl-section__link KeyB" id="KeyB">
-              Ctrl
-            </a>
-          </div>
-    `
-);
-animateOnKeyDown(17, 66);
-
 if (
   navigator.platform.indexOf("Mac") === 0 ||
   navigator.platform === "iPhone"
 ) {
-  $modifierKeyPrefix = $imgWrap.insertAdjacentHTML(
+  $imgWrap.insertAdjacentHTML(
     "afterbegin",
     `
       <div class="commandl-section__link KeyB" id="KeyB">
         <a class="commandl-section__link KeyB" id="KeyB">
           <img
-            src="http://localhost:1234/command-line-img-1.5f3fe782.svg"
+            src=${commandIcon}
             alt="image"
             class="commandl-section__image"
             id="image"
@@ -99,4 +89,16 @@ if (
   `
   );
   animateOnKeyDown(55, 11);
+} else {
+  $imgWrap.insertAdjacentHTML(
+    "afterbegin",
+    `
+            <div class="commandl-section__link KeyB" id="KeyB">
+              <a class="commandl-section__link KeyB" id="KeyB">
+                Ctrl
+              </a>
+            </div>
+      `
+  );
+  animateOnKeyDown(17, 66);
 }
