@@ -73,7 +73,7 @@ if (
   navigator.platform.indexOf("Mac") === 0 ||
   navigator.platform === "iPhone"
 ) {
-  let $modifierKeyPrefix = $imgWrap.insertAdjacentHTML(
+  $imgWrap.insertAdjacentHTML(
     "afterbegin",
     `
       <div class="commandl-section__link KeyB" id="KeyB">
@@ -90,7 +90,7 @@ if (
   );
   animateOnKeyDown(55, 11);
 } else {
-  $modifierKeyPrefix = $imgWrap.insertAdjacentHTML(
+  $imgWrap.insertAdjacentHTML(
     "afterbegin",
     `
             <div class="commandl-section__link KeyB" id="KeyB">
