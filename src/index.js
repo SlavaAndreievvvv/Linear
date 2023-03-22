@@ -79,7 +79,7 @@ if (
       <div class="commandl-section__link KeyB" id="KeyB">
         <a class="commandl-section__link KeyB" id="KeyB">
           <img
-            src="${commandIcon}"
+            src=${commandIcon}
             alt="image"
             class="commandl-section__image"
             id="image"
