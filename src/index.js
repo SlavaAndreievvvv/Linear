@@ -144,7 +144,7 @@ let options = {
 };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll(
-  ".card-linear, .card-review, .title, .hero-section__subtitle, .cycles-section__picture, .roadmap-section__picture, .KeyB"
+  ".card-linear, .card-review, .title, .hero-section__subtitle, .cycles-section__picture, .roadmap-section__picture, .KeyB, .sponsors-section"
 );
 
 for (let elm of elements) {
