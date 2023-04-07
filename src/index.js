@@ -109,13 +109,11 @@ const popover = document.querySelector("#popover");
 const content = document.querySelector("#popoverContent");
 const arrow = document.querySelector("#popoverArrowShow");
 
-// Показываем Popover при наведении курсора на текст
 popover.addEventListener("mouseenter", () => {
   content.classList.add("popoverShow");
   arrow.classList.add("popoverArrowShow");
 });
 
-// Скрываем Popover при уводе курсора с текста, но не при уводе с Popover или его содержимого
 popover.addEventListener("mouseleave", () => {
   content.classList.remove("popoverShow");
   arrow.classList.remove("popoverArrowShow");
@@ -130,3 +128,23 @@ content.addEventListener("mouseleave", () => {
   content.classList.remove("popoverShow");
   arrow.classList.remove("popoverArrowShow");
 });
+
+//
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".card-linear, .card-review");
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
