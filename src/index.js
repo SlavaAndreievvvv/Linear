@@ -143,7 +143,9 @@ let options = {
   threshold: [0.5],
 };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll(".card-linear, .card-review");
+let elements = document.querySelectorAll(
+  ".card-linear, .card-review, .title, .hero-section__subtitle, .cycles-section__picture, .roadmap-section__picture, .KeyB"
+);
 
 for (let elm of elements) {
   observer.observe(elm);
