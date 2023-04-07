@@ -12,13 +12,6 @@
   &__item {
     margin: 0 0 0 26px;
     padding: 10px 0;
-    @include u.media("desktop") {
-      margin: 0 0 0 48px;
-    }
-  }
-  &__link {
-    @include u.text(u.rem(14px), 500, u.$color-grey-6, 160%);
-    text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
     &::after {
@@ -29,7 +22,7 @@
       background: #3442c34a;
       transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       position: absolute;
-      bottom: -19px;
+      bottom: -6px;
       left: -10px;
       border-radius: 4px 4px 0 0;
       z-index: -1;
@@ -37,5 +30,12 @@
     &:hover::after {
       height: 260%;
     }
+    @include u.media("desktop") {
+      margin: 0 0 0 48px;
+    }
+  }
+  &__link {
+    @include u.text(u.rem(14px), 500, u.$color-grey-6, 160%);
+    text-decoration: none;
   }
 }

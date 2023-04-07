@@ -102,3 +102,31 @@ if (
   );
   animateOnKeyDown(17, 66);
 }
+
+// Popover
+
+const popover = document.querySelector("#popover");
+const content = document.querySelector("#popoverContent");
+const arrow = document.querySelector("#popoverArrowShow");
+
+// Показываем Popover при наведении курсора на текст
+popover.addEventListener("mouseenter", () => {
+  content.classList.add("popoverShow");
+  arrow.classList.add("popoverArrowShow");
+});
+
+// Скрываем Popover при уводе курсора с текста, но не при уводе с Popover или его содержимого
+popover.addEventListener("mouseleave", () => {
+  content.classList.remove("popoverShow");
+  arrow.classList.remove("popoverArrowShow");
+});
+
+content.addEventListener("mouseenter", () => {
+  content.classList.add("popoverShow");
+  arrow.classList.add("popoverArrowShow");
+});
+
+content.addEventListener("mouseleave", () => {
+  content.classList.remove("popoverShow");
+  arrow.classList.remove("popoverArrowShow");
+});
