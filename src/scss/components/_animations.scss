@@ -1,21 +1,21 @@
-// .title {
-//   opacity: 0;
-//   transform: translateY(-40px);
-//   transition: all 0.3s ease;
-// }
-// .title.element-show {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
-// .hero-section__subtitle {
-//   opacity: 0;
-//   transform: translateY(-40px);
-//   transition: all 0.3s ease 0.3s;
-// }
-// .hero-section__subtitle.element-show {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
+.title {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.3s ease;
+}
+.title.element-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-section__subtitle {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.3s ease 0.3s;
+}
+.hero-section__subtitle.element-show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .cycles-section__picture,
 .roadmap-section__picture {
   transition: all 0.5s ease-in-out;
