@@ -1,4 +1,4 @@
-@use 'utils' as u;
+@use "utils" as u;
 
 .card-review {
   display: flex;
@@ -9,7 +9,8 @@
   padding: 16px;
   max-width: 385px;
   height: 100%;
-  
+  opacity: 0;
+
   &__avatar {
     margin-bottom: auto;
     margin-right: 16px;
@@ -30,7 +31,7 @@
   &__link {
     @include u.text(u.rem(14px), 400, u.$color-grey-5, 160%);
     margin-right: 12px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       color: u.$color-white;
     }
@@ -54,32 +55,66 @@
   }
   &--position-4 {
     transform: translateY(0px);
-    @include u.media('desktop') {
+    @include u.media("desktop") {
       transform: translateY(-68px);
     }
   }
   &--position-5 {
     transform: translateY(0px);
-    @include u.media('desktop') {
+    @include u.media("desktop") {
       transform: translateY(-22px);
     }
   }
   &--position-7 {
     transform: translateY(0px);
-    @include u.media('desktop') {
+    @include u.media("desktop") {
       transform: translateY(-68px);
     }
   }
   &--position-8 {
     transform: translateY(0px);
-    @include u.media('desktop') {
+    @include u.media("desktop") {
       transform: translateY(-68px);
     }
   }
   &--position-10 {
     transform: translateY(0px);
-    @include u.media('desktop') {
+    @include u.media("desktop") {
       transform: translateY(-68px);
     }
   }
+}
+
+.card-review:nth-child(1) {
+  transition: all 0.4s ease;
+}
+.card-review:nth-child(2) {
+  transition: all 0.4s ease 0.2s;
+}
+.card-review:nth-child(3) {
+  transition: all 0.4s ease 0.3s;
+}
+.card-review:nth-child(4) {
+  transition: all 0.4s ease 0.4s;
+}
+.card-review:nth-child(5) {
+  transition: all 0.4s ease 0.5s;
+}
+.card-review:nth-child(6) {
+  transition: all 0.4s ease 0.6s;
+}
+.card-review:nth-child(7) {
+  transition: all 0.4s ease 0.7s;
+}
+.card-review:nth-child(8) {
+  transition: all 0.4s ease 0.8s;
+}
+.card-review:nth-child(9) {
+  transition: all 0.4s ease 0.9s;
+}
+.card-review:nth-child(10) {
+  transition: all 0.4s ease 1s;
+}
+.card-review.element-show {
+  opacity: 1;
 }

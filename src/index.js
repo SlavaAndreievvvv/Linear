@@ -102,3 +102,51 @@ if (
   );
   animateOnKeyDown(17, 66);
 }
+
+// Popover
+
+const popover = document.querySelector("#popover");
+const content = document.querySelector("#popoverContent");
+const arrow = document.querySelector("#popoverArrowShow");
+
+popover.addEventListener("mouseenter", () => {
+  content.classList.add("popoverShow");
+  arrow.classList.add("popoverArrowShow");
+});
+
+popover.addEventListener("mouseleave", () => {
+  content.classList.remove("popoverShow");
+  arrow.classList.remove("popoverArrowShow");
+});
+
+content.addEventListener("mouseenter", () => {
+  content.classList.add("popoverShow");
+  arrow.classList.add("popoverArrowShow");
+});
+
+content.addEventListener("mouseleave", () => {
+  content.classList.remove("popoverShow");
+  arrow.classList.remove("popoverArrowShow");
+});
+
+//
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(
+  ".card-linear, .card-review, .title, .hero-section__subtitle, .cycles-section__picture, .roadmap-section__picture, .KeyB, .sponsors-section"
+);
+
+for (let elm of elements) {
+  observer.observe(elm);
+}

@@ -1,0 +1,54 @@
+.title {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.3s ease;
+}
+.title.element-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-section__subtitle {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.3s ease 0.3s;
+}
+.hero-section__subtitle.element-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cycles-section__picture,
+.roadmap-section__picture {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.cycles-section__picture.element-show,
+.roadmap-section__picture.element-show {
+  opacity: 1;
+}
+.KeyB:nth-child(1) {
+  transform: scale(0.6) translateY(-60px);
+  opacity: 0;
+  transition-property: opacity transform;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+}
+.KeyB:nth-child(2) {
+  transform: scale(0.6) translateY(60px);
+  opacity: 0;
+  transition-property: opacity transform;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+}
+.KeyB.element-show {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0px);
+}
+.sponsors-section {
+  opacity: 0;
+}
+.sponsors-section.element-show {
+  opacity: 1;
+}
