@@ -76,29 +76,25 @@ if (
   $imgWrap.insertAdjacentHTML(
     "afterbegin",
     `
-      <div class="commandl-section__link KeyB" id="KeyB">
-        <a class="commandl-section__link KeyB" id="KeyB">
-          <img
-            src=${commandIcon}
-            alt="image"
-            class="commandl-section__image"
-            id="image"
-          />
-        </a>
-      </div>
+    <div class="commandl-section__link KeyB" id="KeyB">
+       <img
+        src=${commandIcon}
+        alt="image"
+        class="commandl-section__image"
+        id="image"
+      />
+    </div>  
   `
   );
   animateOnKeyDown(55, 11);
 } else {
   $imgWrap.insertAdjacentHTML(
     "afterbegin",
+    `       
+    <div class="commandl-section__link KeyB" id="KeyB">
+      Ctrl
+    </div>     
     `
-            <div class="commandl-section__link KeyB" id="KeyB">
-              <a class="commandl-section__link KeyB" id="KeyB">
-                Ctrl
-              </a>
-            </div>
-      `
   );
   animateOnKeyDown(17, 66);
 }
@@ -144,7 +140,7 @@ let options = {
 };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll(
-  ".card-linear, .card-review, .title, .hero-section__subtitle, .cycles-section__picture, .roadmap-section__picture, .KeyB, .sponsors-section"
+  ".card-linear, .card-review, .title, .hero-section__subtitle, .cycles-section__picture, .roadmap-section__picture, .KeyB, .sponsors-section, .animate-caption"
 );
 
 for (let elm of elements) {

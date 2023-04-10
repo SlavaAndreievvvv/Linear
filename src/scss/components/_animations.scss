@@ -25,30 +25,37 @@
 .roadmap-section__picture.element-show {
   opacity: 1;
 }
-.KeyB:nth-child(1) {
-  transform: scale(0.6) translateY(-60px);
-  opacity: 0;
-  transition-property: opacity transform;
-  transition-timing-function: ease;
-  transition-duration: 0.4s;
-  transition-delay: 0.3s;
+.KeyB {
 }
-.KeyB:nth-child(2) {
-  transform: scale(0.6) translateY(60px);
-  opacity: 0;
-  transition-property: opacity transform;
-  transition-timing-function: ease;
-  transition-duration: 0.4s;
-  transition-delay: 0.3s;
-}
+
 .KeyB.element-show {
-  opacity: 1;
-  transform: scale(1);
-  transform: translateY(0px);
+  animation: zoom 2s ease infinite;
 }
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .sponsors-section {
   opacity: 0;
 }
 .sponsors-section.element-show {
+  opacity: 1;
+}
+
+.animate-caption {
+  transform: scale(0.7) translateY(80px);
+  opacity: 0.5;
+  transition: all 0.8s ease 0.2s;
+}
+.animate-caption.element-show {
+  transform: scale(1) translateY(0);
   opacity: 1;
 }
