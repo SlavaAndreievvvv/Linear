@@ -1,4 +1,4 @@
-@use 'utils' as u;
+@use "utils" as u;
 
 .sponsors-section {
   width: 100%;
@@ -6,30 +6,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  padding-bottom: 40px;
 
   &__title {
     @include u.text(u.rem(13px), 400, u.$color-grey-6, 150%);
     margin-bottom: 37px;
-    @include u.media('tablet') {
+    @include u.media("tablet") {
       margin-bottom: 64px;
     }
   }
   &__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1025px;
-    @include u.media('tablet') {
-      height: 230px;
-    }
+    justify-content: space-between;
+    animation: scroll 20s linear infinite;
+    gap: 12px;
+  }
+  &__item {
+    display: flex;
   }
   &__icon {
-    width: 171px;
-    height: 51px;
-    @include u.media('tablet') {
-      width: 200px;
-      height: 60px;
-    }
+    width: 200px;
+    height: 60px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
   }
 }
